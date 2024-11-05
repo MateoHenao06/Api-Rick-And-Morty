@@ -12,11 +12,20 @@
         <h1>Rick And Morty</h1>
         <hr>
         <input id="txt-character" class="finder-character" type="text" placeholder="Type your character">
-        <div id="containerCards" class="container-cards">
-        </div> 
+        <div id="filters"> 
+            <label><input type="checkbox" value="Male"> Male</label> 
+            <label><input type="checkbox" value="Female"> Female</label> 
+            <label><input type="checkbox" value="unknown"> Unknown</label> 
+        </div>
+        <div id="containerCards" class="container-cards"></div>
+        <div id="pagination"> 
+            <button id="prev" disabled>Anterior</button> 
+            <span id="page-num">1</span> 
+            <button id="next">Siguiente</button> 
+        </div>
     </main>
     <footer>
-        <a href="">Mateo Henao</a>
+        <a href="https://github.com/MateoHenao06/Api-Rick-And-Morty.git">Mateo Henao</a>
     </footer>
     <script src="templates/app.js"></script>
 </body>
