@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(90deg, #000000, #2e3a42, #03275e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 10.2rem;
+    background-image: url("../images/rickandmorty.jpg");
+    background-size: contain;
+}
+
+h1{
+    font-size: 5rem;
+    text-shadow: 0 0 15px #ffff00;
+    color: #00ffff;
+    animation: title 1s infinite;
+    font-family: "Delicious Handrawn", cursive;
+}
+
+@keyframes title {
+    50% {
+        text-shadow: 0 0 15px #00ffff;
+        color: #ffff00;
+    }
+}
+
+hr{
+    width: 90%;
+    margin: 1rem;
+}
+
+main{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finder-character{
+    width: 30rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: #1c272e;
+    padding: 1rem;
+    color: #ffffff;
+    font-family: "Delicious Handrawn", cursive;
+}
+
+.container-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-character{
+    width: 20rem;
+    height: 10rem;
+    background-color: #261b36;
+    border: groove 5px #484444;
+    margin: 1rem;
+    display: flex;
+}
+
+.card-character > img{
+    width: 50%;
+    height: 100%;
+}
+
+.card-character > .description-card{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description-card > h2{
+    text-align: center;
+    color: #ffff00;
+    text-shadow: 0 0 15px #ffff;
+}
+
+.description-card > p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #00ffff;
+    margin-top: 2rem;
+}
+
+footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #03275e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer > a{
+    color: #ffff;
+}
